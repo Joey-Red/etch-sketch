@@ -1,0 +1,25 @@
+<!DOCTYPE index.html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Etch-A-Sketch</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<div class="info">
+  <h1>Etch-A-Sketch</h1>
+</div>
+<div class="container" id="container">
+  <div class="circleL" id="circleL"></div>
+  <div class="circleR" id="circleR"></div>
+</div>
+<div class="buttons">
+  <button class="btn1" onclick="resetGrid">Reset</button>
+  <button class="btn2" onclick="shake">Shake</button>
+  <button class="btn3" onclick="removeKnobs">Toggle knobs</button>
+  <input placeholder="Enter #" type="number"  id="numInput" min="1" max="100">
+  <button id="numInputButton" type="button" onclick="setBlockValue">Enter</button>
+</div>
+<script src="/script.js"></script>
+</html>

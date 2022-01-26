@@ -1,0 +1,81 @@
+html {
+  background-color: rgb(179, 111, 111);
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  color: black;
+}
+.info {
+  display: flex;
+  justify-content: center;
+  background-color: darkred;
+  border-radius: 10px;
+  width: 450px;
+  margin: 0px auto 10px auto;
+}
+.container {
+  display: grid;
+  position: relative;
+  background-color: white;
+  height: 500px;
+  width: 500px;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 8px solid darkred;
+}
+.circleL {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: darkred;
+  position: absolute;
+  bottom: 10;
+  left: 10;
+}
+.circleR {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: darkred;
+  position: absolute;
+  bottom: 10;
+  right: 10;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin: 2px;
+}
+.invis {
+  display: none;
+}
+
+.animate {
+  animation-name: shake;
+  animation-duration: 0.5s;
+  animation-iteration-count: 3;
+}
+
+input {
+  width: 70px;
+}
+
+@keyframes shake {
+  0% {
+    translate: -20px;
+  }
+  25% {
+    translate: 20px;
+  }
+  50% {
+    translate: -20px;
+  }
+  75% {
+    translate: 20px;
+  }
+  100% {
+    translate: -20px;
+  }
+}
